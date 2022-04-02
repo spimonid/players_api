@@ -26,14 +26,13 @@ class PlayersControllerTest < ActionDispatch::IntegrationTest
   end
 
   test "/search" do
-    get "/search", params: { player: { sport: "basketball", feeling_lucky: true } }
+    get "/search", params: { sport: "basketball", feeling_lucky: true }
     assert_response :success
     feeling_lucky_response_length = response.body.length
 
-    get "/search", params: { player: { sport: "basketball" } }
+    get "/search", params: { sport: "basketball" }
     assert_response :success
     full_response_length = response.body.length
-
     assert_not_equal feeling_lucky_response_length, full_response_length
   end
 end

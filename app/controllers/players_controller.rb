@@ -6,9 +6,9 @@ class PlayersController < ApplicationController
   end
 
   def search
-    @result = Player.search(params["player"])
-    feeling_lucky = params["player"].keys.include?("feeling_lucky")
-    result = feeling_lucky ? @result[0] : @result
+    @result = Player.search(params)
+    feeling_lucky = params.keys.include?("feeling_lucky")
+    result = feeling_lucky ? @result.first : @result
 
     render :json => result.to_json( :except => [:full_name, :sport, :created_at, :updated_at] )
   end
