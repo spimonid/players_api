@@ -45,7 +45,7 @@ task :initial_import => :environment do
                     age: player["age"],
                     sport: player["sport"],
                     name_brief: name_brief,
-                    average_position_age_diff: player["age"] ? player["age"] - average_age_by_position[player["position"]] : nil
+                    average_position_age_diff: player["age"] ? (player["age"] - average_age_by_position[player["position"]]).abs : nil
                   })
     player_record.save
   end
