@@ -44,6 +44,11 @@ https://github.com/spimonid/players_api/blob/401ae97002443fe8a42abe0bb0be1c2a643
 
 Fire up your preferred API testing tool
 
+<img width="800" alt="Screen Shot 2022-04-03 at 9 07 11 AM" src="https://user-images.githubusercontent.com/33667846/161446799-dcdfe620-08b9-45fb-bbb8-d235524e911d.png">
+<img width="800" alt="Screen Shot 2022-04-03 at 9 07 50 AM" src="https://user-images.githubusercontent.com/33667846/161446801-4e8bf3d1-49fc-466e-8f8a-dcb12f069521.png">
+<img width="800" alt="Screen Shot 2022-04-03 at 9 08 14 AM" src="https://user-images.githubusercontent.com/33667846/161446802-cfdf0115-4b1d-4843-9a01-911ee33fe6bd.png">
+
+
 Run `rails test test/models/player_test.rb` and `rails test test/controllers/players_controller_test.rb`
 
 ## A couple things that would come next that I couldn't get to
